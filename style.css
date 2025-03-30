@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head{
+    background-image: url(head_bg_image.png);
+    height: 310px;
+    background-size: cover;
+    h1{
+        color: rgb(250, 89, 175);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 310px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+        font-style: italic;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .head{
+        background-image: url(responsive_head_bg_image.jpg);
+        height: 200px;
+        h1{
+            height: 150px;
+        }
+    };
+}
+
+.navbar-brand{
+    width: 75vw;
+}
+.nav-link{
+    background: linear-gradient(#e91010, #e401fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* background: #A7CFDF;
+    background: linear-gradient(to right, #A7CFDF 0%, #22e480 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+.bg-light{
+    background: rgb(101,137,227);
+    background: linear-gradient(90deg, rgba(101,137,227,1) 0%, rgba(13,177,173,1) 35%, rgba(128,236,203,1) 100%);
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar-brand{
+        width: 99vw;
+        height: 40px;
+    }
+}
+
+.content{
+    background-image: url("blue-abstract-background-vector.jpg");
+    background-size: cover;
+    padding: 10px;
+}
+
+.section_name{
+    color: #f70aa0;
+    /* background: #A7CFDF;
+    background: radial-gradient(to right, #12a7e2 50%, #0aff80 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+.tag_line{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    font-size: 72px;
+    background: radial-gradient(#eeeeee, #05d09a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 480px) {
+    .tag_line{
+        font-size: 28px;
+        img{
+            height: 40px;
+        }
+    }
+}
+
+.discription{
+    img{
+        width: 100px;
+        height: 50px;
+        display: inline-block;
+    }
+    background: linear-gradient(#e91010, #e401fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    height: 180px;
+    width: 98vw;
+    border: solid #3470d7;
+    border-radius: 15px;
+    text-align: justify;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 23px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media only screen and (max-width: 480px) {
+    .discription{
+        img{
+            width: 100px;
+            height: 50px;
+            display: inline-block;
+        }
+        background: radial-gradient(#c51818, #0e7aed);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        height: 320px;
+        width: 95vw;
+        border: solid #3470d7;
+        border-radius: 15px;
+        text-align: justify;
+        font-size: 16px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.image_description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.choreographer_image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid #3470d7;
+    margin: 10px;
+    box-shadow: 0 0 10px #e41212;
+    display: inline-block;
+}
+
+.choreographer_discription{
+    background: radial-gradient(#c51818, #0e7aed);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.btn:focus, .btn:active, button:focus, button:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
+  #image-gallery .modal-footer{
+    display: block;
+  }
+  
+  .thumb{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    .size{
+        img{
+            width: 365px;
+            height: 300px;
+        }
+      }
+  }
+
+  .address{
+    background: linear-gradient(#e91010, #e401fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    height: 180px;
+    width: 98vw;
+    border: solid #3470d7;
+    border-radius: 15px;
+    text-align: justify;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 23px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media only screen and (max-width: 480px) {
+    .address{
+        background: radial-gradient(#c51818, #0e7aed);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        height: 115px;
+        width: 94vw;
+        border: solid #3470d7;
+        border-radius: 15px;
+        text-align: justify;
+        font-size: 16px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
